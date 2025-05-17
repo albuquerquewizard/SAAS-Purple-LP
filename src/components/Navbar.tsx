@@ -17,7 +17,7 @@ export const Navbar = () => {
           <MenuIcon className="text-white " /> 
         </div>
 
-        <nav className = "flex gap-6 items-center">
+        <nav className = "hidden sm:flex gap-6 items-center">
           <a href="#" className="text-white text-opacity-60 hover:text-opacity-100 transition">About</a>
           <a href="#" className="text-white text-opacity-60 hover:text-opacity-100 transition">Features</a>
           <a href="#" className="text-white text-opacity-60 hover:text-opacity-100 transition">Updates</a>
