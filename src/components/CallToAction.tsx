@@ -1,14 +1,42 @@
+"use client";
+
 import helixImage from "../assets/images/helix2.png"
 import Image from "next/image"
 import emojiStarImage from "../assets/images/emojistar.png"
+import { motion } from "framer-motion"
 
 export const CallToAction = () => {
   return (
     <div className="bg-black text-white py-[72px] sm:py-24 text-center">
       <div className="container max-w-xl relative">
 
-        <Image src={helixImage} alt="helix" className="absolute top-6 left-[calc(100%+36px)]" />
-        <Image src={emojiStarImage} alt="emoji star" className="absolute -top-[120px] right-[calc(100%+24px)]" />
+        <motion.div
+          className="absolute top-6 left-[calc(100%+36px)]"
+          drag
+        >
+          <Image 
+            src={helixImage} 
+            alt="helix" 
+            height="200"
+            width="200"
+            className="max-w-none"
+            draggable="false"
+          />
+        </motion.div>
+
+        <motion.div
+          className="absolute -top-[120px] right-[calc(100%+24px)]"
+          drag
+        >
+          <Image 
+            src={emojiStarImage} 
+            alt="emoji star" 
+            height="200"
+            width="200"
+            className="max-w-none"
+            draggable="false"
+          />
+        </motion.div>
 
         <h2 className="font-bold text-5xl tracking-tighter sm:text-6xl">
           Get instant access
