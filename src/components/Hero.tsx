@@ -91,9 +91,18 @@ export const Hero = () => {
 
         {/* Call-to-action button */}
         <div className="flex mt-8 justify-center">
-          <button className="bg-white text-black py-3 px-5 rounded-lg font-medium">
+        <motion.button
+            whileHover={{
+              scale: 1.05,
+              boxShadow:
+                "0 0 8px 2px rgba(255, 221, 153, 0.8), 0 0 15px 5px rgba(255, 221, 153, 0.4)",
+              transition: { duration: 0.3 },
+            }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-white text-black py-3 px-5 rounded-lg font-medium"
+          >
             Get for free
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>
