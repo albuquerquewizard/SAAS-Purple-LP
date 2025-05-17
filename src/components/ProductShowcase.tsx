@@ -14,12 +14,15 @@ export const ProductShowcase = () => {
             your progress, motivate your efforts, and celebrate your successes,
             one task at a time.
           </p>
-        </div>
+        </div >
+
+        <div className="flex items-center justify-center">
         <Image
           src={appScreen}
           alt="The product screenshot"
           className="mt-14 "
         />
+        </div>
       </div>
     </div>
   );
